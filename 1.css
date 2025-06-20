@@ -1,0 +1,468 @@
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    overflow: hidden;
+}
+
+
+
+.container{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+    
+}
+
+.sidebar{
+    background-color: black; 
+    width: 300px;
+    border-radius: 1rem; /*16px*/
+    margin: 0.5rem;
+}
+
+.main{
+    background-color: #121212 ;
+    flex: 1;
+    overflow: auto;
+    border-radius: 1rem; /*16px*/
+    padding: 0 1.5rem 9rem 1.5rem;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.5;
+    padding: 0.5rem 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.nav-option:hover{
+    line-height: 2.5rem;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.nav-option i {
+ font-size: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem ;
+    height: 100%;
+    margin: 0.5rem;
+    padding:0.5rem 0.75rem;
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons{
+   font-size:1.25rem;
+   display: flex;
+}
+
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #232323;
+    height: 10rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 0.75rem 0;
+    padding:  0.5rem 1.5rem;
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.badge{
+    background-color: #fff;
+    border: none;
+    border-radius:100px ;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    height: 2rem;
+    margin: 0.75rem;
+    width: fit-content;
+    font-size: 0.90rem;
+    transition: all 0.3s ease;
+}
+
+.badge-dark{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius:100px ;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    height: 2rem;
+    margin: 0.75rem;
+    width: fit-content;
+    font-size: 0.90rem;
+}
+
+.badge:hover,
+.controls-icons i:hover {
+    transform: scale(1.05);
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.sticky-nav-icons {
+    margin-left: 0.75rem;
+}
+
+.sticky-nav-options{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.sticky-nav-options i.fa-user {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 8px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sticky-nav-options .fa-circle-down {
+    margin-right: 8px;
+    font-size: 1rem; 
+}
+
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .player {
+        width: 100%;
+    }
+}
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.79rem;
+    opacity: 0.5;
+}
+
+.footer{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 90%;
+    height: 30%;
+    border: 1px solid white;
+    opacity: 0.4;
+}
+
+.album{
+    width: 25%;
+}
+
+.controls{
+    width: 25%;
+    display: flex;
+}
+
+.player{
+    width: 50%;
+}
+
+.player-icon-control{
+    height: 1rem;
+    margin-right: 2rem;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.player-icon-control:hover{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 0.3rem;
+    transform: scale(1.05);
+}
+
+.music-player{
+    background-color: black ;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.player-controls{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.playback-bar{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer ;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 100px;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    background-color: #1bd760;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.album img{
+    height:60px
+}
+
+.album{
+    display: flex;
+    margin-left: 1.5rem;
+    align-items: center;
+}
+
+.singer-name{
+    font-size: 0.75rem;
+    margin-left: 1rem;
+    opacity: 0.5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.song-name{
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.album-icons{
+    margin-left: 3.5rem;
+    opacity: 0.5;
+}
+
+.fa-display{
+    margin-left: 1rem;
+}
+
+.fa-heart{
+    font-size: 1.2rem;
+}
+
+.controls-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.controls-icons i,
+.controls-icons .volume-control {
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.controls-icons i:hover,
+.controls-icons .volume-control:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+/* Spotify-style volume slider */
+.volume-slider {
+    width: 80px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    height: 4px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.volume-slider::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #1bd760;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-top: -4px;
+    position: relative;
+}
+
+.volume-slider::-moz-range-thumb {
+    background-color: #1bd760;
+    height: 12px;
+    width: 12px;
+    border: none;
+    border-radius: 50%;
+}
+
+.volume-slider::-moz-range-track {
+    background-color: #ddd;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.volume-slider::-webkit-slider-thumb{
+    appearance: none;
+    color: #1bd760;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.playing-bars {
+    display: inline-flex;
+    gap: 2px;
+}
+
+.playing-bars span {
+    width: 2px;
+    height: 8px;
+    background: #1bd760;
+    animation: bounce 0.5s infinite ease-in-out alternate;
+}
+
+@keyframes bounce {
+    from { transform: scaleY(0.5); }
+    to { transform: scaleY(1.5); }
+}
+
+.controls {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
