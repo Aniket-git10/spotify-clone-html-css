@@ -4,7 +4,7 @@ body{
     color: white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 2rem;
+    font-weight: weight;
     font-style: normal;
     overflow: hidden;
 }
