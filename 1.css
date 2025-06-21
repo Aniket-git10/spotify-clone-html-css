@@ -466,3 +466,16 @@ a{
     justify-content: flex-end;
     padding-right: 2rem;
 }
+
+/* Fix Font Awesome icons not appearing */
+.controls-icons i,
+.album-icons i,
+.nav-option i,
+.icons i {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  font-size: 1rem;
+  display: inline-block;
+}
