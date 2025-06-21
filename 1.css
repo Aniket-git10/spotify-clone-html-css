@@ -479,3 +479,52 @@ a{
   font-size: 1rem;
   display: inline-block;
 }
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+
+  .card-container {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .card {
+    width: 90%;
+    margin: 0.75rem auto;
+  }
+
+  .music-player {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0.5rem;
+  }
+
+  .album, .player, .controls {
+    width: 100%;
+    justify-content: center;
+    margin: 0.5rem 0;
+  }
+
+  .controls-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .sticky-nav-options .fa-user {
+    margin: 0;
+  }
+
+  .sticky-nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
